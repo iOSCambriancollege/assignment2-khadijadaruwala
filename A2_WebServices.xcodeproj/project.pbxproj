@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E6F57F5298B39A1007FC204 /* DogsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F57F4298B39A1007FC204 /* DogsListTableViewCell.swift */; };
 		DB9F870A2981F2D20038CA89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F87092981F2D20038CA89 /* AppDelegate.swift */; };
 		DB9F870C2981F2D20038CA89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F870B2981F2D20038CA89 /* SceneDelegate.swift */; };
 		DB9F870E2981F2D20038CA89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F870D2981F2D20038CA89 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E6F57F4298B39A1007FC204 /* DogsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsListTableViewCell.swift; sourceTree = "<group>"; };
 		DB9F87062981F2D20038CA89 /* A2_WebServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_WebServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9F87092981F2D20038CA89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB9F870B2981F2D20038CA89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E6F57F3298B397C007FC204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F57F4298B39A1007FC204 /* DogsListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DB9F86FD2981F2D20038CA89 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		DB9F87082981F2D20038CA89 /* A2_WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				8E6F57F3298B397C007FC204 /* View */,
 				DB9F87092981F2D20038CA89 /* AppDelegate.swift */,
 				DB9F870B2981F2D20038CA89 /* SceneDelegate.swift */,
 				DB9F870D2981F2D20038CA89 /* ViewController.swift */,
@@ -140,6 +151,7 @@
 			files = (
 				DB9F870E2981F2D20038CA89 /* ViewController.swift in Sources */,
 				DB9F870A2981F2D20038CA89 /* AppDelegate.swift in Sources */,
+				8E6F57F5298B39A1007FC204 /* DogsListTableViewCell.swift in Sources */,
 				DB9F870C2981F2D20038CA89 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
