@@ -10,4 +10,5 @@ class APIUrl {
     static let shared = APIUrl()
     
     let allDogsAPI = "https://dog.ceo/api/breeds/list/all"
+    let randomDogImageAPI = "https://dog.ceo/api/breeds/image/random"
 }

@@ -25,4 +25,21 @@ class WebService {
         
         return dogsList
     }
+    
+    static func getRandomDogImage(urlString: String) async throws -> String {
+        guard
+            let url = URL(string: urlString)
+        else { throw APIError.invalidUrl }
+        
+        let (data, _) = try await
+        URLSession.shared.data(from: url)
+        
+        
+        let decoder = JSONDecoder()
+        
+        let response = try decoder.decode(DogRandomImageModel.self, from: data)
+        let imageUrlString =  response.message!
+        
+        return imageUrlString
+    }
 }

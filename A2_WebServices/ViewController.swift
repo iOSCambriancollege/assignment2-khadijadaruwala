@@ -33,6 +33,18 @@ class ViewController: UITableViewController {
         
     }
     
+    func getRandomImage(cell: DogsListTableViewCell){
+        Task{
+            do{
+                let randomImage = try await WebService.getRandomDogImage(urlString: APIUrl.shared.randomDogImageAPI )
+                if let imageUrl = URL(string: randomImage) {
+                    cell.breedImage.load(url: imageUrl)
+                }
+            } catch let err{
+                print("something went wrong: \(err)")
+            }
+        }
+    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return breeds.count
@@ -49,6 +61,7 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "breedCellIdentifier", for: indexPath) as! DogsListTableViewCell
         let breed = keys[indexPath.section]
+        getRandomImage(cell: cell)
         
         if breeds[breed]!.count > 0
             && indexPath.row != 0{
