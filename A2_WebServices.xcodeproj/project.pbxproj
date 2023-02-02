@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8E6F57F5298B39A1007FC204 /* DogsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F57F4298B39A1007FC204 /* DogsListTableViewCell.swift */; };
+		8E6F57FA298B3AF3007FC204 /* APIUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F57F7298B3AF3007FC204 /* APIUrl.swift */; };
+		8E6F57FB298B3AF3007FC204 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F57F8298B3AF3007FC204 /* APIError.swift */; };
+		8E6F57FC298B3AF3007FC204 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F57F9298B3AF3007FC204 /* WebService.swift */; };
+		8E6F57FF298B3BC0007FC204 /* DogsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F57FE298B3BC0007FC204 /* DogsModel.swift */; };
 		DB9F870A2981F2D20038CA89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F87092981F2D20038CA89 /* AppDelegate.swift */; };
 		DB9F870C2981F2D20038CA89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F870B2981F2D20038CA89 /* SceneDelegate.swift */; };
 		DB9F870E2981F2D20038CA89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F870D2981F2D20038CA89 /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		8E6F57F4298B39A1007FC204 /* DogsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsListTableViewCell.swift; sourceTree = "<group>"; };
+		8E6F57F7298B3AF3007FC204 /* APIUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUrl.swift; sourceTree = "<group>"; };
+		8E6F57F8298B3AF3007FC204 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		8E6F57F9298B3AF3007FC204 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		8E6F57FE298B3BC0007FC204 /* DogsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsModel.swift; sourceTree = "<group>"; };
 		DB9F87062981F2D20038CA89 /* A2_WebServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_WebServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9F87092981F2D20038CA89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB9F870B2981F2D20038CA89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +55,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8E6F57F6298B3AC5007FC204 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F57F8298B3AF3007FC204 /* APIError.swift */,
+				8E6F57F7298B3AF3007FC204 /* APIUrl.swift */,
+				8E6F57F9298B3AF3007FC204 /* WebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8E6F57FD298B3BAC007FC204 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F57FE298B3BC0007FC204 /* DogsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DB9F86FD2981F2D20038CA89 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +92,8 @@
 		DB9F87082981F2D20038CA89 /* A2_WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				8E6F57FD298B3BAC007FC204 /* Model */,
+				8E6F57F6298B3AC5007FC204 /* Network */,
 				8E6F57F3298B397C007FC204 /* View */,
 				DB9F87092981F2D20038CA89 /* AppDelegate.swift */,
 				DB9F870B2981F2D20038CA89 /* SceneDelegate.swift */,
@@ -149,10 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6F57FF298B3BC0007FC204 /* DogsModel.swift in Sources */,
+				8E6F57FA298B3AF3007FC204 /* APIUrl.swift in Sources */,
 				DB9F870E2981F2D20038CA89 /* ViewController.swift in Sources */,
+				8E6F57FC298B3AF3007FC204 /* WebService.swift in Sources */,
 				DB9F870A2981F2D20038CA89 /* AppDelegate.swift in Sources */,
 				8E6F57F5298B39A1007FC204 /* DogsListTableViewCell.swift in Sources */,
 				DB9F870C2981F2D20038CA89 /* SceneDelegate.swift in Sources */,
+				8E6F57FB298B3AF3007FC204 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
