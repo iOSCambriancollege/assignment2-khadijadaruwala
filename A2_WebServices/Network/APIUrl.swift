@@ -11,4 +11,5 @@ class APIUrl {
     
     let allDogsAPI = "https://dog.ceo/api/breeds/list/all"
     let randomDogImageAPI = "https://dog.ceo/api/breeds/image/random"
+    let breedImageAPI = "https://dog.ceo/api/breed/"
 }

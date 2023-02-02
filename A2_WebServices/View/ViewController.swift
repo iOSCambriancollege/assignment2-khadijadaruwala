@@ -77,5 +77,14 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndexPath = tableView.indexPathForSelectedRow
+        else {return}
+        guard let dogDetailVC = segue.destination as? DogDetailViewController else { return }
+        
+        dogDetailVC.breedName = keys[selectedIndexPath.section]
+    }
 }
 

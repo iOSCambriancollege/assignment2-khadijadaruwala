@@ -42,4 +42,21 @@ class WebService {
         
         return imageUrlString
     }
+    
+    static func getDogImage(urlString: String) async throws -> [String] {
+        guard
+            let url = URL(string: urlString)
+        else { throw APIError.invalidUrl }
+        
+        let (data, _) = try await
+        URLSession.shared.data(from: url)
+        
+        
+        let decoder = JSONDecoder()
+        
+        let response = try decoder.decode(DogsImageModel.self, from: data)
+        let dogsImageList =  response.message!
+        
+        return dogsImageList
+    }
 }
